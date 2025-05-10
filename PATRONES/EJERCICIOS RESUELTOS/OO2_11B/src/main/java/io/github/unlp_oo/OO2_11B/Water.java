@@ -1,4 +1,4 @@
-package io.github.unlp_oo.OO2_11;
+package io.github.unlp_oo.OO2_11B;
 
 public class Water extends Topography {
 
@@ -11,5 +11,4 @@ public class Water extends Topography {
 	public boolean isEqual(Topography t) {
 	    return t instanceof Water;
 	}
-	
 }

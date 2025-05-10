@@ -1,4 +1,4 @@
-package io.github.unlp_oo.OO2_11;
+package io.github.unlp_oo.OO2_11B;
 
 public class Land extends Topography {
 
