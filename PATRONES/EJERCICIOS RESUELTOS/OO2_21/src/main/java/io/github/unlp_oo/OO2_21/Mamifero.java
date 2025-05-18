@@ -10,6 +10,24 @@ public class Mamifero implements IMamifero {
 	private IMamifero padre;
 	private IMamifero madre;
 	
+	
+	// Constructores 
+	
+	public Mamifero(String identificador) {
+		this.inicializarValores(identificador);
+	}
+	
+	public Mamifero(String identificador, String especie) {
+		this.inicializarValores(identificador);
+		this.especie = especie;
+	}
+	
+	private void inicializarValores(String identificador) {
+		this.identificador = identificador;
+		this.padre = new NullMamifero();
+		this.madre = new NullMamifero();
+	}
+	
 	// Getters
 
 	public String getIdentificador() {
