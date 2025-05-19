@@ -8,6 +8,7 @@ public class CombinedAsset extends Asset {
 	private List<Asset> assets;
 	
 	public CombinedAsset() {
+		// necesito super() ?
 		super();
 		this.assets = new ArrayList<Asset>();
 	}

@@ -10,6 +10,7 @@ public class Rental extends Asset {
 	private double monthlyRent;
 	
 	public Rental(LocalDate startDate, LocalDate endDate, double monthlyRent) {
+		// necesito super() ?
 		super();
 		this.startDate = startDate;
 		this.endDate = endDate;

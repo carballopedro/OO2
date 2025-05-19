@@ -7,6 +7,7 @@ public class RealEstate extends Asset {
 	private double pricePerM2;
 	
 	public RealEstate(String address, double area, double pricePerM2) {
+		// necesito super() ?
 		super();
 		this.address = address;
 		this.area = area;

@@ -11,6 +11,7 @@ public class Car extends Asset {
 	private double newCarPrice;
 	
 	public Car (int model, double km, double newCarPrice) {
+		// necesito super() ?
 		super();
 		this.model = model;
 		this.km = km;
