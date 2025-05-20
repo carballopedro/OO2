@@ -18,7 +18,6 @@ public class SubteWay {
 	}
 	
 	public Sandwich makeSandwich() {
-		this.builder.reset();
 		this.builder.addBread();
 		this.builder.addDressing();
 		this.builder.addMainIngredient();

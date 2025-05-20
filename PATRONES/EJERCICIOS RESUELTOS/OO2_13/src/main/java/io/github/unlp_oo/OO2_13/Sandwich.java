@@ -1,7 +1,16 @@
 package io.github.unlp_oo.OO2_13;
 
 public class Sandwich {
-
+	
+	// podria seguir la misma logica que el ej 15
+	// tener una lista de componentes (bread, dressing, etc)
+	// que cada componente conozca su precio
+	// y tal vez tener un catalogo de componentes
+	// para evitar tener setters
+	// mucho codigo y ademas son publicos y no esta muy bueno
+	// ademas, si yo quisiera una hamburguesa diferente en el futuro, no podria usar este codigo
+	// poca reusabilidad si yo quiero agregar un componente
+	
 	private String bread;
 	private double breadsPrice;
 	private String dressing;

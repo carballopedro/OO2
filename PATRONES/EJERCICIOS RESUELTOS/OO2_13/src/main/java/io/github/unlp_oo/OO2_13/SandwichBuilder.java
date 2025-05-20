@@ -4,12 +4,17 @@ public abstract class SandwichBuilder {
 
 	private Sandwich sandiwch;
 	
-	public void reset() {
+	// reset privado
+	// ademas el director no deberia hacerse cargo de hacer reset
+	// lo hace el mismo builder
+	private void reset() {
 		this.sandiwch = new Sandwich();
 	}
 	
 	public Sandwich getSandwich() {
-		return this.sandiwch;
+		Sandwich temp = this.sandiwch;
+		reset();
+		return temp;
 	}
 	
 	public abstract void addBread();
