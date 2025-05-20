@@ -12,13 +12,12 @@ public class Director {
 		this.builder = builder;
 	}
 	
-	public Device buildDevice (String name) {
-		this.builder.reset();
+	public Quote buildDevice (String name) {
 		this.builder.setProcessor();
 		this.builder.setRAM();
 		this.builder.setDisk();
 		this.builder.setGPU();
 		this.builder.setChassis();
-		return this.builder.getDevice();
+		return new Quote(name, this.builder.getDevice());
 	}
 }

@@ -1,33 +1,13 @@
 package io.github.unlp_oo.OO2_15;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Device {
 
 	private List<Component> components;
 	
-	public Device() {
-		this.components = new ArrayList<Component>();
-	}
-	
-	public void setProcessor(Component c) {
-		this.add(c);
-	}
-	public void setRAM(Component c) {
-		this.add(c);
-	}
-	public void setDisk(Component c) {
-		this.add(c);
-	}
-	public void setGPU(Component c) {
-		this.add(c);
-	}
-	public void setChassis(Component c) {
-		this.add(c);
-	}
-	public void add(Component c) {
-		this.components.add(c);
+	public Device(List<Component> components) {
+		this.components = components;
 	}
 	
 	// El consumo de un equipo está formado por la suma de los consumos de cada uno de sus componentes.

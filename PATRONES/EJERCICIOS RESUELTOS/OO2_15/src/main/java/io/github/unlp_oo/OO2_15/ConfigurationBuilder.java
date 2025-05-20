@@ -1,11 +1,17 @@
 package io.github.unlp_oo.OO2_15;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class ConfigurationBuilder {
 
-	private Device device;
+	protected List<Component> components;
 	
-	public void reset() {
-		this.device = new Device();
+	// reset privado
+	// ademas el director no deberia hacerse cargo de hacer reset
+	// lo hace el mismo builder
+	private void reset() {
+		this.components = new ArrayList<Component>();
 	}
 	
 	public abstract void setProcessor();
@@ -15,7 +21,9 @@ public abstract class ConfigurationBuilder {
 	public abstract void setChassis();
 	
 	public Device getDevice() {
-		return this.device;
+		Device temp = new Device(this.components);
+		this.reset();
+		return temp;
 	}
 
 }
