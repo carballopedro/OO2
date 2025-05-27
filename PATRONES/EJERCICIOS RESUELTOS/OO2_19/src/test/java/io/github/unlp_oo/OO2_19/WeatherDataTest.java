@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class WeatherDataTest {
 
-	private HomeWeatherStationAdapter adapter;
+	private NewHomeWeatherStation adapter;
 		
 	@BeforeEach
 	void setUp() throws Exception {
@@ -15,7 +15,7 @@ public class WeatherDataTest {
 		homeStation.setTemperature(80.6);
 		homeStation.setTemperature(89.6);
 		homeStation.setTemperature(86.0);
-        this.adapter = new HomeWeatherStationAdapter(homeStation);
+        this.adapter = new NewHomeWeatherStation(homeStation);
 	}
 	
 	@Test

@@ -7,9 +7,10 @@ public class MinFDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String displayData() {
-		double min = Math.round(this.getTemperatures().stream().mapToDouble(t -> t).min().orElse(0));
-		return super.displayData() + "Min. F: " + min + "; ";
+	// HOOK
+	public String addExtraData() {
+		double min = Math.round(this.getMin());
+		return "Min. F: " + min + "; ";
 	}
 
 }

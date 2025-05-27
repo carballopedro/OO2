@@ -7,8 +7,9 @@ public class AverageCDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String displayData() {
-		double average = Math.round(this.getTemperatures().stream().mapToDouble(t -> ((t-32)/1.8)).average().orElse(0));
-		return super.displayData() + "Average C: " + average + "; ";
+	// HOOK
+	public String addExtraData() {
+		double average = Math.round((this.getAverage()-32)/1.8);
+		return "Average C: " + average + "; ";
 	}
 }

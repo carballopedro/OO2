@@ -7,7 +7,8 @@ public class TemperaturesDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String displayData() {
-		return super.displayData() + "Temperatures: " + this.getTemperatures().toString() + "; ";
+	// HOOK
+	public String addExtraData() {
+		return "Temperatures: " + this.getTemperatures().toString() + "; ";
 	}
 }

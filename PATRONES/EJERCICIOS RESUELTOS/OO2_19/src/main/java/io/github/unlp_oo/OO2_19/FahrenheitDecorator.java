@@ -7,8 +7,9 @@ public class FahrenheitDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String displayData() {
-		return super.displayData() + "Temperatura F: " + this.getTemperature() + "; ";
+	// HOOK
+	public String addExtraData() {
+		return "Temperatura F: " + this.getTemperature() + "; ";
 	}
 
 }

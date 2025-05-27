@@ -7,8 +7,9 @@ public class SolarRadiationDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String displayData() {
-		return super.displayData() + "Solar Radiation: " + this.getSolarRadiation() + "; ";
+	// HOOK
+	public String addExtraData() {
+		return "Solar Radiation: " + this.getSolarRadiation() + "; ";
 	}
 
 }

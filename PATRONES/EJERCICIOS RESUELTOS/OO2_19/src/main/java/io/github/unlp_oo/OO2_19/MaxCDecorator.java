@@ -7,8 +7,9 @@ public class MaxCDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 
-	public String displayData() {
-		double max = Math.round(this.getTemperatures().stream().mapToDouble(t -> ((t-32)/1.8)).max().orElse(0));
-		return super.displayData() + "Max. C: " + max + "; ";
+	// HOOK
+	public String addExtraData() {
+		double max = Math.round((this.getMax()-32)/1.8);
+		return "Max. C: " + max + "; ";
 	}
 }

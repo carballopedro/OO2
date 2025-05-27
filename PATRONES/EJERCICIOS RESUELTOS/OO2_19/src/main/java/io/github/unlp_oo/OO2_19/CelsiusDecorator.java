@@ -7,8 +7,9 @@ public class CelsiusDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String displayData() {
-		return super.displayData() + "Temperature C: " + ((this.getTemperature()-32)/1.8) + "; ";
+	// HOOK
+	public String addExtraData() {
+		return "Temperature C: " + ((this.getTemperature()-32)/1.8) + "; ";
 	}
 	
 }

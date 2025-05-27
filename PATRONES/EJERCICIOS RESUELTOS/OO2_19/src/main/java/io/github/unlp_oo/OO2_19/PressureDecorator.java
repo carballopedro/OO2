@@ -7,8 +7,9 @@ public class PressureDecorator extends WeatherDecorator {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String displayData() {
-		return super.displayData() + "Atmospheric Pressure: " + this.getPressure() + "; ";
+	// HOOK
+	public String addExtraData() {
+		return "Atmospheric Pressure: " + this.getPressure() + "; ";
 	}
 
 }
