@@ -2,11 +2,11 @@ package io.github.unlp_oo.OO2_19;
 
 import java.util.List;
 
-public abstract class WeatherDecorator extends NewWeatherData {
+public abstract class WeatherDecorator implements NewWeatherData {
 
-	private WeatherData component;
+	private NewWeatherData component;
 	
-	public WeatherDecorator(WeatherData component) {
+	public WeatherDecorator(NewWeatherData component) {
 		this.component = component;
 	}
 	
@@ -33,4 +33,16 @@ public abstract class WeatherDecorator extends NewWeatherData {
 	
 	// HOOK
 	public abstract String addExtraData();
+	
+	public double getAverage() {
+		return this.component.getAverage();
+	}
+	
+	public double getMin() {
+		return this.component.getMin();
+	}
+	
+	public double getMax() {
+		return this.component.getMax();
+	}
 }

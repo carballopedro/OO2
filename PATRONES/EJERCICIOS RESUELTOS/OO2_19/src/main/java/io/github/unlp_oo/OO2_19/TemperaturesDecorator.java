@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 public class TemperaturesDecorator extends WeatherDecorator {
 
-	public TemperaturesDecorator(WeatherData component) {
+	public TemperaturesDecorator(NewWeatherData component) {
 		super(component);
 		// TODO Auto-generated constructor stub
 	}

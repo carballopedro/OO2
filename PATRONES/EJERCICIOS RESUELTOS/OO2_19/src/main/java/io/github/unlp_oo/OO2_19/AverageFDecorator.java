@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 public class AverageFDecorator extends WeatherDecorator {
 
-	public AverageFDecorator(WeatherData component) {
+	public AverageFDecorator(NewWeatherData component) {
 		super(component);
 		// TODO Auto-generated constructor stub
 	}

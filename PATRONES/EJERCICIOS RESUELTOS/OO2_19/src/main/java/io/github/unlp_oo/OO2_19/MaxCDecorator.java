@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 public class MaxCDecorator extends WeatherDecorator {
 
-	public MaxCDecorator(WeatherData component) {
+	public MaxCDecorator(NewWeatherData component) {
 		super(component);
 		// TODO Auto-generated constructor stub
 	}

@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 public class AverageCDecorator extends WeatherDecorator {
 
-	public AverageCDecorator(WeatherData component) {
+	public AverageCDecorator(NewWeatherData component) {
 		super(component);
 		// TODO Auto-generated constructor stub
 	}

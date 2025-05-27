@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 public class MinCDecorator extends WeatherDecorator {
 
-	public MinCDecorator(WeatherData component) {
+	public MinCDecorator(NewWeatherData component) {
 		super(component);
 		// TODO Auto-generated constructor stub
 	}

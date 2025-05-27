@@ -2,7 +2,7 @@ package io.github.unlp_oo.OO2_19;
 
 import java.util.List;
 
-public class NewHomeWeatherStation extends NewWeatherData {
+public class NewHomeWeatherStation implements NewWeatherData {
 
 	private HomeWeatherStation station;
 	
@@ -32,5 +32,17 @@ public class NewHomeWeatherStation extends NewWeatherData {
 	
 	public String displayData(){
 		return "";
+	}
+	
+	public double getAverage() {
+		return this.getTemperatures().stream().mapToDouble(t -> t).average().orElse(0);
+	}
+	
+	public double getMin() {
+		return this.getTemperatures().stream().mapToDouble(t -> t).min().orElse(0);
+	}
+	
+	public double getMax() {
+		return this.getTemperatures().stream().mapToDouble(t -> t).max().orElse(0);
 	}
 }
