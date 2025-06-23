@@ -12,7 +12,7 @@ public class ConSeguro extends Decorator {
 	}
 	
 	public double getCostoEnvio() {
-		return super.getCostoEnvio() + (super.getValorDeclarado() * 0.2);
+		return super.getCostoEnvio() + (this.getValorDeclarado() * 0.2);
 	}
 
 }
